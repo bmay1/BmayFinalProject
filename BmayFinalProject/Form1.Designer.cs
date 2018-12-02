@@ -170,7 +170,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 74);
             this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
+            this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
