@@ -35,11 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtMammal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBird = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtGovernor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -107,53 +107,53 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Year:";
             // 
-            // textBox4
+            // txtMammal
             // 
-            this.textBox4.Location = new System.Drawing.Point(482, 357);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtMammal.Location = new System.Drawing.Point(482, 357);
+            this.txtMammal.Name = "txtMammal";
+            this.txtMammal.Size = new System.Drawing.Size(162, 22);
+            this.txtMammal.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(357, 360);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(64, 17);
             this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
+            this.label4.Text = "Mammal:";
             // 
-            // textBox5
+            // txtBird
             // 
-            this.textBox5.Location = new System.Drawing.Point(482, 385);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 22);
-            this.textBox5.TabIndex = 10;
+            this.txtBird.Location = new System.Drawing.Point(482, 385);
+            this.txtBird.Name = "txtBird";
+            this.txtBird.Size = new System.Drawing.Size(162, 22);
+            this.txtBird.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(357, 388);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(37, 17);
             this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
+            this.label5.Text = "Bird:";
             // 
-            // textBox6
+            // txtGovernor
             // 
-            this.textBox6.Location = new System.Drawing.Point(482, 413);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(162, 22);
-            this.textBox6.TabIndex = 12;
+            this.txtGovernor.Location = new System.Drawing.Point(482, 413);
+            this.txtGovernor.Name = "txtGovernor";
+            this.txtGovernor.Size = new System.Drawing.Size(162, 22);
+            this.txtGovernor.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(357, 416);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(76, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
+            this.label6.Text = "Governor: ";
             // 
             // button1
             // 
@@ -190,11 +190,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtGovernor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtBird);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMammal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtYear);
             this.Controls.Add(this.label3);
@@ -220,11 +220,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtMammal;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBird;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtGovernor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
