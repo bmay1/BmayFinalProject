@@ -179,7 +179,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(127, 74);
             this.button3.TabIndex = 15;
-            this.button3.Text = "button3";
+            this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
