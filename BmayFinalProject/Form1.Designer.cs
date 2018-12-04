@@ -189,14 +189,15 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(795, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(25, 17);
             this.label7.TabIndex = 16;
-            this.label7.Text = "label7";
+            this.label7.Text = "ID:";
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(792, 60);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(152, 22);
             this.textBox1.TabIndex = 17;
             // 
