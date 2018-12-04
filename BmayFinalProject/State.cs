@@ -17,7 +17,7 @@ namespace BmayFinalProject
         [BsonElement("capital")]
         public String Capital { get; set; }
         [BsonElement("year")]
-        public Int32 Year { get; set; }
+        public int Year { get; set; }
         [BsonElement("mammal")]
         public String Mammal { get; set; }
         [BsonElement("bird")]
