@@ -34,5 +34,17 @@ namespace BmayFinalProject
             InitializeComponent();
             ReadAllDcouments();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtState.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCapital.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtYear.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtMammal.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtBird.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtGovernor.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+        }
     }
 }
