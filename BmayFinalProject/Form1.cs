@@ -15,8 +15,8 @@ namespace BmayFinalProject
     public partial class Form1 : Form
     {
         static MongoClient state = new MongoClient();
-        static IMongoDatabase db = state.GetDatabase("documents");
-        static IMongoCollection<State> collection = db.GetCollection<State>("documents");
+        static IMongoDatabase db = state.GetDatabase("States");
+        static IMongoCollection<State> collection = db.GetCollection<State>("States");
         
         public void ReadAllDocuments()
         {
