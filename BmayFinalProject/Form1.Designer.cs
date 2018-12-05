@@ -75,16 +75,16 @@
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(320, 361);
+            this.txtState.Location = new System.Drawing.Point(278, 360);
             this.txtState.Name = "txtState";
-            this.txtState.Size = new System.Drawing.Size(162, 22);
+            this.txtState.Size = new System.Drawing.Size(194, 22);
             this.txtState.TabIndex = 2;
             // 
             // txtCapital
             // 
-            this.txtCapital.Location = new System.Drawing.Point(320, 389);
+            this.txtCapital.Location = new System.Drawing.Point(278, 388);
             this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(162, 22);
+            this.txtCapital.Size = new System.Drawing.Size(194, 22);
             this.txtCapital.TabIndex = 4;
             // 
             // label2
@@ -99,9 +99,9 @@
             // 
             // txtYear
             // 
-            this.txtYear.Location = new System.Drawing.Point(320, 417);
+            this.txtYear.Location = new System.Drawing.Point(278, 416);
             this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(162, 22);
+            this.txtYear.Size = new System.Drawing.Size(194, 22);
             this.txtYear.TabIndex = 6;
             // 
             // label3
@@ -116,9 +116,9 @@
             // 
             // txtMammal
             // 
-            this.txtMammal.Location = new System.Drawing.Point(627, 359);
+            this.txtMammal.Location = new System.Drawing.Point(605, 360);
             this.txtMammal.Name = "txtMammal";
-            this.txtMammal.Size = new System.Drawing.Size(162, 22);
+            this.txtMammal.Size = new System.Drawing.Size(194, 22);
             this.txtMammal.TabIndex = 8;
             // 
             // label4
@@ -133,9 +133,9 @@
             // 
             // txtBird
             // 
-            this.txtBird.Location = new System.Drawing.Point(627, 387);
+            this.txtBird.Location = new System.Drawing.Point(605, 388);
             this.txtBird.Name = "txtBird";
-            this.txtBird.Size = new System.Drawing.Size(162, 22);
+            this.txtBird.Size = new System.Drawing.Size(194, 22);
             this.txtBird.TabIndex = 10;
             // 
             // label5
@@ -150,9 +150,9 @@
             // 
             // txtGovernor
             // 
-            this.txtGovernor.Location = new System.Drawing.Point(627, 415);
+            this.txtGovernor.Location = new System.Drawing.Point(605, 416);
             this.txtGovernor.Name = "txtGovernor";
-            this.txtGovernor.Size = new System.Drawing.Size(162, 22);
+            this.txtGovernor.Size = new System.Drawing.Size(194, 22);
             this.txtGovernor.TabIndex = 12;
             // 
             // label6
@@ -227,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 450);
+            this.ClientSize = new System.Drawing.Size(1307, 450);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label7);
