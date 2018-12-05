@@ -61,5 +61,11 @@ namespace BmayFinalProject
             collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
             ReadAllDcouments();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            collection.DeleteOne(s=> s.Id == ObjectId.Parse(txtId.Text));
+            ReadAllDcouments();
+        }
     }
 }
