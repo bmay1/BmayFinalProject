@@ -21,6 +21,7 @@ namespace BmayFinalProject
         public void ReadAllDcouments()
         {
             List<States> list = collection.AsQueryable().ToList<States>();
+            dataGridView1.DataSource = list;
             txtId.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
             txtState.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
             txtCapital.Text = dataGridView1.Rows[0].Cells[2].Value.ToString();
@@ -58,7 +59,7 @@ namespace BmayFinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var updateDef = Builders<States>.Update.Set("state",txtState.Text).Set("capital",txtCapital.Text).Set("year",txtYear.Text).Set("mammal",txtMammal.Text).Set("bird",txtBird.Text).Set("governor",txtGovernor.Text);
+            var updateDef = Builders<States>.Update.Set("state",txtState.Text).Set("capital",txtCapital.Text).Set("year",txtYear.Text).Set("mammal",txtMammal.Text).Set("bird",txtBird.Text).Set("governor", txtGovernor.Text);
             collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
             ReadAllDcouments();
         }
