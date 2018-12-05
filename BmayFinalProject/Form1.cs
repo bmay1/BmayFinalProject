@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,6 +46,20 @@ namespace BmayFinalProject
             txtBird.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtGovernor.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            States s = new States(txtState.Text,txtCapital.Text,int.Parse(txtYear.Text), txtMammal.Text,txtBird.Text,txtGovernor.Text);
+            collection.InsertOne(s);
+            ReadAllDcouments();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var updateDef = Builders<States>.Update.Set("state",txtState.Text).Set("capital",txtCapital.Text).Set("year",txtYear.Text).Set("mammal",txtMammal.Text).Set("bird",txtBird.Text).Set("governor",txtGovernor.Text);
+            collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
+            ReadAllDcouments();
         }
     }
 }
