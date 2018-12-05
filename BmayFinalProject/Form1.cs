@@ -52,9 +52,25 @@ namespace BmayFinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            States s = new States(txtState.Text,txtCapital.Text,int.Parse(txtYear.Text), txtMammal.Text,txtBird.Text,txtGovernor.Text);
-            collection.InsertOne(s);
-            ReadAllDcouments();
+            if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
+            {
+                MessageBox.Show("Please fill in each textbox.");
+            }
+            else
+            {
+                try
+                {
+                    States s = new States(txtState.Text, txtCapital.Text, int.Parse(txtYear.Text), txtMammal.Text, txtBird.Text, txtGovernor.Text);
+                    collection.InsertOne(s);
+                    ReadAllDcouments();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+;
         }
 
         private void button2_Click(object sender, EventArgs e)

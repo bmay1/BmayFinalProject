@@ -59,7 +59,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(997, 328);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -200,7 +200,7 @@
             this.txtId.Location = new System.Drawing.Point(1070, 32);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(162, 22);
+            this.txtId.Size = new System.Drawing.Size(206, 22);
             this.txtId.TabIndex = 17;
             // 
             // label7
