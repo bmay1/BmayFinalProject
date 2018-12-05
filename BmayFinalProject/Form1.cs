@@ -69,5 +69,10 @@ namespace BmayFinalProject
             collection.DeleteOne(s=> s.Id == ObjectId.Parse(txtId.Text));
             ReadAllDcouments();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

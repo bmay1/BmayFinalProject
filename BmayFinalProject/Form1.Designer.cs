@@ -46,6 +46,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,7 +161,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(793, 142);
+            this.button1.Location = new System.Drawing.Point(801, 103);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 74);
             this.button1.TabIndex = 13;
@@ -170,7 +171,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(793, 244);
+            this.button2.Location = new System.Drawing.Point(801, 183);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 74);
             this.button2.TabIndex = 14;
@@ -180,7 +181,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(793, 336);
+            this.button3.Location = new System.Drawing.Point(801, 273);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(127, 74);
             this.button3.TabIndex = 15;
@@ -190,7 +191,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(791, 81);
+            this.txtId.Location = new System.Drawing.Point(799, 42);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(162, 22);
@@ -199,17 +200,28 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(850, 50);
+            this.label7.Location = new System.Drawing.Point(858, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 17);
             this.label7.TabIndex = 16;
             this.label7.Text = "ID:";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(801, 360);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(127, 74);
+            this.btnExit.TabIndex = 18;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
@@ -256,6 +268,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
