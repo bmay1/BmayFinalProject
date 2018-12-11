@@ -74,6 +74,15 @@ namespace BmayFinalProject
                     States s = new States(txtState.Text, txtCapital.Text, int.Parse(txtYear.Text), txtMammal.Text, txtBird.Text, txtGovernor.Text);
                     collection.InsertOne(s);
                     ReadAllDcouments();
+
+                    txtState.Text = "";
+                    txtCapital.Text = "";
+                    txtYear.Text = "";
+                    txtMammal.Text = "";
+                    txtBird.Text = "";
+                    txtGovernor.Text = "";
+
+                    MessageBox.Show("Inert Into Database Succesfully!");
                 }
                 catch (Exception ex)
                 {
