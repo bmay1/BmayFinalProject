@@ -96,6 +96,7 @@ namespace BmayFinalProject
                 try
                 {
                     var updateDef = Builders<States>.Update.Set("state", txtState.Text).Set("capital", txtCapital.Text).Set("year", txtYear.Text).Set("mammal", txtMammal.Text).Set("bird", txtBird.Text).Set("governor", txtGovernor.Text);
+
                     collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
                     ReadAllDcouments();
                     txtState.Text = "";
