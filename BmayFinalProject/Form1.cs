@@ -54,6 +54,7 @@ namespace BmayFinalProject
         {
             //Gridview shows list of state, state's capital, year of becoming a state, state's mammal,
             //state's bird and state's governor.
+            //The id is coming from the database. It is self generated.
 
             txtId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtState.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
