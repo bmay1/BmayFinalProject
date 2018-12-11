@@ -139,6 +139,14 @@ namespace BmayFinalProject
                 {
                     collection.DeleteOne(s => s.Id == ObjectId.Parse(txtId.Text));
                     ReadAllDcouments();
+
+                    txtState.Text = "";
+                    txtCapital.Text = "";
+                    txtYear.Text = "";
+                    txtMammal.Text = "";
+                    txtBird.Text = "";
+                    txtGovernor.Text = "";
+
                     MessageBox.Show("Delete was successful!");
                 }
                 catch (Exception ex)
