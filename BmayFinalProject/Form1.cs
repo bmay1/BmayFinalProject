@@ -60,9 +60,12 @@ namespace BmayFinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            //Insert Button.
+
             if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
             {
-
+                MessageBox.Show("Please fill in each textbox.");
             }
             else
             {
@@ -102,9 +105,7 @@ namespace BmayFinalProject
 
                     MessageBox.Show(ex.Message);
                 }
-            }
-
-            
+            }      
 
         }
 
