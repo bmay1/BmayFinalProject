@@ -14,6 +14,10 @@ namespace BmayFinalProject
 {
     public partial class Form1 : Form
     {
+        //Collects information form MongDB.
+        //Database in MongoDB is 'statesDB'.
+        //The collection on MongoDB is called  'states'.
+
         static MongoClient information = new MongoClient();
         static IMongoDatabase db = information.GetDatabase("statesDB");
         static IMongoCollection<States> collection = db.GetCollection<States>("states");
@@ -47,6 +51,9 @@ namespace BmayFinalProject
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Gridview shows list of state, state's capital, year of becoming a state, state's mammal,
+            //state's bird and state's governor.
+
             txtId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtState.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtCapital.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -64,6 +71,7 @@ namespace BmayFinalProject
         {
 
             //Insert Button.
+            //Insert new information into gridview and database.
 
             if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
             {
@@ -97,6 +105,8 @@ namespace BmayFinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Update Button.
+            //Update's inforation when changes are made to any state's that are alreay listed.
 
             if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
             {
@@ -131,6 +141,9 @@ namespace BmayFinalProject
         private void button3_Click(object sender, EventArgs e)
         {
 
+            //Delete Button.
+            //Delete's information on gridview and database.
+
             if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
             {
                 MessageBox.Show("Textboxes cannot be empty");
@@ -162,6 +175,8 @@ namespace BmayFinalProject
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //Exit button.
+            //Gives user option to exit or not to exit the program.
 
             DialogResult dialog = MessageBox.Show("Do you really want to close the program?",
                 "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
