@@ -62,7 +62,7 @@ namespace BmayFinalProject
         {
             if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
             {
-                MessageBox.Show("Please fill in each textbox.");
+
             }
             else
             {
@@ -83,9 +83,29 @@ namespace BmayFinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var updateDef = Builders<States>.Update.Set("state",txtState.Text).Set("capital",txtCapital.Text).Set("year",txtYear.Text).Set("mammal",txtMammal.Text).Set("bird",txtBird.Text).Set("governor", txtGovernor.Text);
-            collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
-            ReadAllDcouments();
+
+            if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
+            {
+                MessageBox.Show("Please fill in each textbox.");
+            }
+            else
+            {
+                try
+                {
+                    var updateDef = Builders<States>.Update.Set("state", txtState.Text).Set("capital", txtCapital.Text).Set("year", txtYear.Text).Set("mammal", txtMammal.Text).Set("bird", txtBird.Text).Set("governor", txtGovernor.Text);
+                    collection.UpdateOne(s => s.Id == ObjectId.Parse(txtId.Text), updateDef);
+                    ReadAllDcouments();
+                    MessageBox.Show("Update Database Succesfully!");
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
