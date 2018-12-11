@@ -24,6 +24,7 @@ namespace BmayFinalProject
 
         public void ReadAllDcouments()
         {
+           
             List<States> list = collection.AsQueryable().ToList<States>();
             dataGridView1.DataSource = list;
             txtId.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
