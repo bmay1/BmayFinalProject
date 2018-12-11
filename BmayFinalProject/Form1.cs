@@ -134,7 +134,19 @@ namespace BmayFinalProject
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            DialogResult dialog = MessageBox.Show("Do you really want to close the program?",
+                "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else if (dialog == DialogResult.No)
+            {
+              
+            }
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
