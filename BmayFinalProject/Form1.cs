@@ -30,6 +30,13 @@ namespace BmayFinalProject
             txtBird.Text = dataGridView1.Rows[0].Cells[5].Value.ToString();
             txtGovernor.Text = dataGridView1.Rows[0].Cells[6].Value.ToString();
 
+            txtState.Text = "";
+            txtCapital.Text = "";
+            txtYear.Text = "";
+            txtMammal.Text = "";
+            txtBird.Text = "";
+            txtGovernor.Text = "";
+
         }
 
         public Form1()
@@ -48,13 +55,8 @@ namespace BmayFinalProject
             txtBird.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtGovernor.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 
-            //txtState.Text = "";
-            //txtCapital.Text = "";
-            //txtYear.Text = "";
-            //txtMammal.Text = "";
-            //txtBird.Text = "";
-            //txtGovernor.Text = "";
-        
+
+
 
         }
 
