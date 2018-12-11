@@ -110,8 +110,26 @@ namespace BmayFinalProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            collection.DeleteOne(s=> s.Id == ObjectId.Parse(txtId.Text));
-            ReadAllDcouments();
+
+            if (txtState.Text == "" || txtCapital.Text == "" || txtYear.Text == "" || txtMammal.Text == "" || txtBird.Text == "" || txtGovernor.Text == "")
+            {
+                MessageBox.Show("Textboxes cannot be empty");
+            }
+            else
+            {
+                try
+                {
+                    collection.DeleteOne(s => s.Id == ObjectId.Parse(txtId.Text));
+                    ReadAllDcouments();
+                    MessageBox.Show("Delete was successful!");
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
